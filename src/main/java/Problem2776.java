@@ -20,6 +20,8 @@ public class Problem2776 {
                 arr2[j] = sc.nextInt();
             }
             Arrays.sort(arr);
+            //수첩2를 순회하면서 이진탐색트리를 이용하여 수첩1에
+            //해당하는 숫자가 있는지 확인
             for(int j =0; j<arr2.length; j++){
                 if (Arrays.binarySearch(arr, arr2[j])<0)
                     System.out.println(0);
