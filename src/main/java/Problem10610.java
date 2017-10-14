@@ -17,7 +17,9 @@ public class Problem10610 {
         }
         String ans = "";
         Arrays.sort(arr);
+        //30의 배수라는 것은 각 자리의 합이 3의 배수이고 일의자리가 0이라는 말이다.
         if (num%3==0 && arr[0]==0){
+            //주어진 배열을 역순으로 출력.
             for (int i = arr.length-1; i>=0; i--){
                 ans += arr[i]+"";
             }
